@@ -10,13 +10,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    background: black;
+
+    padding: 50px;
     opacity: 0.8;
     border-radius: 25px;
-    padding: 50px;
+
+    color: white;
+    background: black;
   }
   
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}  
 
 .input-city{
     border: none;
@@ -24,19 +33,32 @@
     padding: 10px;
     border-radius: 25px;
     font-size: 20px;
+    flex: 1;
+    height: 50px;
     background-color: #7c7c7c2b;
     color: white;
-    width: calc(100% - 100px);
 }
 
 .btn-busca{
     border: none;
     outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #7c7c7c2b;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
     float: right;
+    background-color: #7c7c7c2b;
+}
+
+.btn-busca i{
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+    color: white;
+
+}
+
+.btn-busca:hover i{
+     color: rgba(255, 255, 255, 0.3); 
 }
 
 .city-div{
@@ -45,8 +67,8 @@
 
 .temp{
     font-size: 20px;
-    color: #fff;
     margin-top: 20px;
+    color: #fff;
 }
 
 .icon-div{
@@ -63,13 +85,13 @@
 }
 
 .umidade{
-    color: #fff;
     margin-top: 15px;
+    color: #fff;
 }
 
 h2{
-    color: #fff;
     font-size: 28px;
     font-weight: 300;
+    color: #fff;
 }
 
